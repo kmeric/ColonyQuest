@@ -10,6 +10,7 @@ saves/
 schematics/
 structurize/
 XaeroWaypoints/
+.curseclient
 *.txt
 *.json
 !readme.md
