@@ -8,7 +8,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.0d
+			x: -3.5d
 			y: 0.0d
 			description: [
 				"As part of establishing your empire, your king has granted you a special trade charter. This charter allows you to exchange certain trade goods that are less common back home. As your empire here grows, even more lucrative trades may become available."
@@ -70,6 +70,75 @@
 					id: "6008C863C9CF0390"
 					type: "command"
 					command: "/ftbquests change_progress @a reset 486B3FFCA7C460AD"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			description: ["With magic in such abundance here, I have more enchanted books than I know what to do with. My traders have been able to acquire some basic supplies in exchange for even the simplest enchanted book."]
+			id: "17E59B7C29E324C2"
+			tasks: [{
+				id: "2E34148ACFEF9377"
+				type: "item"
+				title: "Any #forge:books"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:books"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "7F4D11FBCAFBE881"
+					type: "item"
+					item: "minecraft:apple"
+					count: 8
+				}
+				{
+					id: "01476EED19CA0361"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 4
+				}
+				{
+					id: "21138F89AC07D15D"
+					type: "item"
+					item: "minecraft:oak_log"
+					count: 4
+				}
+				{
+					id: "38CCC5D687D6F2C0"
+					type: "command"
+					command: "/ftbquests change_progress @a reset 17E59B7C29E324C2"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			description: ["Carrots might not have the greatest resale value, but at least I learned something by growing them. Mostly, I just learned that they don't have much resale value, though."]
+			id: "6056F460728334DE"
+			tasks: [{
+				id: "03B77E8D6B0F1C1A"
+				type: "item"
+				item: "minecraft:carrot"
+				count: 64L
+			}]
+			rewards: [
+				{
+					id: "69BBF9658A2EA57B"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "227FE7E3DAE2721F"
+					type: "command"
+					command: "/ftbquests change_progress @a reset 6056F460728334DE"
 					player_command: false
 				}
 			]

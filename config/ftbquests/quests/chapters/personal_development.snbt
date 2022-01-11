@@ -6,32 +6,289 @@
 	title: "Personal Development"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: 1.0d
-		y: 1.5d
-		description: ["Building an empire can't be limited just to establishing trade. I also have to make sure that I'm at the top of my game. I don't think that I have read a single book since getting here. I should probably work on that. "]
-		id: "66630F6963D0E6B1"
-		tasks: [{
-			id: "3D8BF0EF6B0C6DA3"
-			type: "checkmark"
-			title: "Self-help"
-		}]
-		rewards: [
-			{
-				id: "5C4B815B4C240366"
-				type: "xp_levels"
-				xp_levels: 1
-			}
-			{
-				id: "3AF55A6BF11D4D8E"
+	quests: [
+		{
+			x: 1.0d
+			y: 1.5d
+			description: ["Building an empire can't be limited just to establishing trade. I also have to make sure that I'm at the top of my game. I don't think that I have read a single book since getting here. I should probably work on that. "]
+			id: "66630F6963D0E6B1"
+			tasks: [{
+				id: "3D8BF0EF6B0C6DA3"
+				type: "checkmark"
+				title: "Self-help"
+			}]
+			rewards: [
+				{
+					id: "5C4B815B4C240366"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "3AF55A6BF11D4D8E"
+					type: "item"
+					item: "minecraft:bookshelf"
+				}
+				{
+					id: "5F8D4C6439FB0E82"
+					type: "item"
+					item: "minecraft:book"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: -3.0d
+			description: ["Apparently these books can channel something more than just my inner demons. No point in just having stacks of them all around. Let's instead at least put them on shelves until we can find a better use."]
+			dependencies: ["1BD563DC989AE64E"]
+			id: "688659E05554D42E"
+			tasks: [{
+				id: "2E2B4145AC17EE9E"
 				type: "item"
 				item: "minecraft:bookshelf"
-			}
-			{
-				id: "5F8D4C6439FB0E82"
+				count: 12L
+			}]
+			rewards: [
+				{
+					id: "272CC8513DAA8D12"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "4C0D7CBC667B2801"
+					type: "item"
+					item: "minecraft:lapis_lazuli"
+					count: 8
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: -6.0d
+			description: ["They say that knowledge is power. In the case of enchanting, maybe that's more true than expected. By surrounding the enchanting table with our bookshelves, we can give ourselves a real edge."]
+			dependencies: ["688659E05554D42E"]
+			id: "4D529020ED9A91DA"
+			tasks: [{
+				id: "160CC85B71FC5118"
+				type: "item"
+				item: "minecraft:enchanting_table"
+			}]
+			rewards: [{
+				id: "3681917E7B01EE81"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.0d
+			description: ["While our initial farm provided some necesities, there are plenty of things still missing. Sugarcane will allow us to produce paper and, ultimately, books."]
+			dependencies: ["66630F6963D0E6B1"]
+			id: "317B147BBB7A3B0A"
+			tasks: [{
+				id: "2CE5AE12EF7B388D"
+				type: "item"
+				item: "minecraft:sugar_cane"
+				count: 12L
+			}]
+			rewards: [{
+				id: "675913E3EB9FCB77"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			title: "An Enchanting Discovery"
+			x: -1.5d
+			y: -4.5d
+			description: ["Magic is way easier than the folks back home ever let on! Applying these enchantments to our equipment will surely be a boon."]
+			dependencies: [
+				"688659E05554D42E"
+				"4D529020ED9A91DA"
+			]
+			id: "697C636C10108E8E"
+			tasks: [{
+				id: "1C0622726FD1E948"
+				type: "item"
+				title: "Any #forge:books"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:books"
+					}
+				}
+			}]
+			rewards: [{
+				id: "1F8C023B3E36D4F6"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.0d
+			description: ["While directly enchanting my gear is a good start, I can also enchant simple books, allowing myself to stockpile, collect, or even trade useful enchantments. Of course, applying them to my gear will require the use of an anvil."]
+			dependencies: ["697C636C10108E8E"]
+			id: "411DF159841AF58F"
+			tasks: [{
+				id: "09095D43B1BCFB11"
+				type: "item"
+				item: "minecraft:anvil"
+			}]
+			rewards: [
+				{
+					id: "5AD2B1BFD032C602"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "18C7A2F6F026DDE2"
+					type: "item"
+					item: "minecraft:lapis_lazuli"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "The Nether"
+			x: 3.5d
+			y: 1.5d
+			description: [
+				"Sometimes, personal development comes at the cost of personal danger."
+				"While I'm not keen on personal danger, I have heard that the nether contains a number of rare resources that might become necessary."
+			]
+			dependencies: ["66630F6963D0E6B1"]
+			id: "1CD09CDE8C8ED858"
+			tasks: [
+				{
+					id: "780C6043FCCFAF3A"
+					type: "dimension"
+					dimension: "minecraft:the_nether"
+				}
+				{
+					id: "275169B95519D0A6"
+					type: "item"
+					item: "minecraft:obsidian"
+					count: 10L
+				}
+			]
+			rewards: [{
+				id: "085531A3B9723B65"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Tools of the Trade"
+			x: -1.0d
+			y: 0.0d
+			description: ["While the starting tools were adequate, it's perhaps time to put them on a shelf and upgrade to something a little more professional."]
+			dependencies: ["66630F6963D0E6B1"]
+			id: "32CD815FF3A0D428"
+			tasks: [
+				{
+					id: "4D990D9822A64A16"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1FD618351FFA6CFE"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "527C3E17EF54BA3C"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "751567E687CB00D1"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5B4022DEFC3C10D6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 4.0d
+			description: ["While my morning coffee is enough to get me through most days, the dangers of the nether and whatever might come next calls for something a little more... robust."]
+			dependencies: [
+				"1CD09CDE8C8ED858"
+				"317B147BBB7A3B0A"
+			]
+			id: "6F138C223F4A4AA4"
+			tasks: [{
+				id: "7B5CCC132FC81D45"
+				type: "item"
+				item: "minecraft:brewing_stand"
+			}]
+			rewards: [{
+				id: "42D5C0FF49596BA8"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			description: ["For now, the only thing that I can do with these books is record my own journey, but perhaps I can eventually find a use for them."]
+			dependencies: ["66630F6963D0E6B1"]
+			id: "1BD563DC989AE64E"
+			tasks: [{
+				id: "291256BFFF26BB86"
 				type: "item"
 				item: "minecraft:book"
-			}
-		]
-	}]
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "2200690CDD2CD555"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "5DB26A9EA287A0E8"
+					type: "item"
+					item: {
+						id: "treasurebags:treasure_bag"
+						Count: 1b
+						tag: {
+							silentlib.LootContainer: { }
+						}
+					}
+				}
+			]
+		}
+	]
 }

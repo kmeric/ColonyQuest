@@ -248,5 +248,94 @@
 				xp_levels: 5
 			}]
 		}
+		{
+			x: -2.5d
+			y: -3.0d
+			description: ["Nobody mentioned that citizens were so terrible at caring for themselves. Hopefully this is a short term problem!"]
+			dependencies: ["0D6E099A1A242153"]
+			id: "75599A9909C7A8C8"
+			tasks: [{
+				id: "5166EF74710327F7"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/citizen_eat_food_first"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "198FACC199D7F9DF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "462D964429E4145B"
+					type: "item"
+					item: "minecraft:apple"
+					count: 32
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			description: ["Well, at least one person around here is doing something other than me. Even if I do have to provide pretty much everything that he uses..."]
+			dependencies: ["0D6E099A1A242153"]
+			id: "583A7AA84FEC027F"
+			tasks: [{
+				id: "42ACB94291B0A619"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/build_builder"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "2DD72858F74DB0F1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "137A48748345F489"
+					type: "item"
+					item: {
+						id: "treasurebags:treasure_bag"
+						Count: 1b
+						tag: {
+							silentlib.LootContainer: { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			description: ["\"Never craft again\" is a funny way of saying \"there is one thing that you might have to craft slightly fewer of.\" In any case, by teaching the Builder how to build torches, at least I can free up a few moments to care for myself."]
+			dependencies: ["0D6E099A1A242153"]
+			id: "342A1EF584823D2C"
+			tasks: [{
+				id: "0D004B0007E5AF2D"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/building_add_recipe_torch"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "5B314A5CCBAEE4AB"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "509384C588395E36"
+					type: "item"
+					item: "minecraft:charcoal"
+					count: 32
+				}
+				{
+					id: "75475F7FD3D0C89C"
+					type: "item"
+					item: "minecraft:stick"
+					count: 32
+				}
+			]
+		}
 	]
 }

@@ -10,7 +10,7 @@
 		{
 			x: -2.0d
 			y: -2.5d
-			description: ["Welcome to Momentum. As an aspiring merchant in a new land, your king has tasked you with founding a bustling city for purposes of trade. That might have been easier had he also provided you with the necessary resources, but he has instead told you that the land will provide you with everything that you need. Guess its time to find out if that is true."]
+			description: ["Welcome to ColonyQuest! As an aspiring merchant in a new land, your king has tasked you with founding a bustling colony for purposes of trade and glory. That might have been easier had he also provided you with the necessary resources, but he has instead told you that the land will provide you with everything that you need. Guess its time to find out if that is true."]
 			dependency_requirement: "one_completed"
 			id: "1325C1F12CC9DC43"
 			tasks: [{
