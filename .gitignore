@@ -12,4 +12,4 @@ structurize/
 XaeroWaypoints/
 *.txt
 *.json
-!readme,md
+!readme.md
