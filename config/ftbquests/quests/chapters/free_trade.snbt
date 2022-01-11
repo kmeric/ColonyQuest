@@ -1,0 +1,78 @@
+{
+	id: "646785E48CDE72ED"
+	group: ""
+	order_index: 3
+	filename: "free_trade"
+	title: "Free Trade"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"As part of establishing your empire, your king has granted you a special trade charter. This charter allows you to exchange certain trade goods that are less common back home. As your empire here grows, even more lucrative trades may become available."
+				"Be sure to claim rewards before reseting each quest."
+			]
+			id: "7D6B55F3E4775608"
+			tasks: [{
+				id: "348E54C0FF710A46"
+				type: "checkmark"
+				title: "East Minecraft Trading Company"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 2.0d
+			description: ["After much haggling, our traders were able to exchange the copper ingots for a modest amount of lapis."]
+			id: "4AF9784CF73C257B"
+			tasks: [{
+				id: "169C1DBA6D058F07"
+				type: "item"
+				item: "minecraft:copper_ingot"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "0660C3C11D22B8DA"
+					type: "item"
+					item: "minecraft:lapis_lazuli"
+					count: 16
+				}
+				{
+					id: "4FED5B093F02F4D1"
+					type: "command"
+					command: "/ftbquests change_progress @a reset 4AF9784CF73C257B"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			description: ["We sent the traders with copper blocks, but there was oddly no market for the blocks. They returned them to us, although they were slightly weathered by the trip."]
+			id: "486B3FFCA7C460AD"
+			tasks: [{
+				id: "729115F5608442BA"
+				type: "item"
+				item: "minecraft:copper_block"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "76CAF407713A9655"
+					type: "item"
+					item: "minecraft:oxidized_copper"
+					count: 32
+				}
+				{
+					id: "6008C863C9CF0390"
+					type: "command"
+					command: "/ftbquests change_progress @a reset 486B3FFCA7C460AD"
+					player_command: false
+				}
+			]
+		}
+	]
+}

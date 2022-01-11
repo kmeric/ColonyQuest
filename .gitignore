@@ -1,0 +1,15 @@
+crash-reports/
+downloads/
+journeymap/
+local/
+logs/
+mods/
+patchouli_books/
+resourcepacks/
+saves/
+schematics/
+structurize/
+XaeroWaypoints/
+*.txt
+*.json
+!readme,md

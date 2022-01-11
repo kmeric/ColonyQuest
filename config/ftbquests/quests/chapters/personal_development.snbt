@@ -1,0 +1,37 @@
+{
+	id: "3F825C2036C473BB"
+	group: ""
+	order_index: 1
+	filename: "personal_development"
+	title: "Personal Development"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 1.0d
+		y: 1.5d
+		description: ["Building an empire can't be limited just to establishing trade. I also have to make sure that I'm at the top of my game. I don't think that I have read a single book since getting here. I should probably work on that. "]
+		id: "66630F6963D0E6B1"
+		tasks: [{
+			id: "3D8BF0EF6B0C6DA3"
+			type: "checkmark"
+			title: "Self-help"
+		}]
+		rewards: [
+			{
+				id: "5C4B815B4C240366"
+				type: "xp_levels"
+				xp_levels: 1
+			}
+			{
+				id: "3AF55A6BF11D4D8E"
+				type: "item"
+				item: "minecraft:bookshelf"
+			}
+			{
+				id: "5F8D4C6439FB0E82"
+				type: "item"
+				item: "minecraft:book"
+			}
+		]
+	}]
+}

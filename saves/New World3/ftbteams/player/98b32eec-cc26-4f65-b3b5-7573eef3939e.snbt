@@ -1,0 +1,19 @@
+{
+	id: "98b32eec-cc26-4f65-b3b5-7573eef3939e"
+	type: "player"
+	player_name: "Keirtain"
+	ranks: {
+		98b32eec-cc26-4f65-b3b5-7573eef3939e: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "Keirtain"
+		"ftbteams:color": "#598FFF"
+		"ftbchunks:block_edit_mode": "allies"
+		"ftbchunks:block_interact_mode": "allies"
+		"ftbteams:description": ""
+		"ftbteams:free_to_join": 0b
+		"ftbchunks:allow_fake_players": 1b
+	}
+	message_history: [ ]
+	extra: { }
+}

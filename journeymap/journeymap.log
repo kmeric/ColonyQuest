@@ -1,0 +1,34 @@
+[16:19:41] [Render thread/INFO] [JMLogger] JourneyMap log initialized.
+[16:19:41] [Render thread/INFO] [JourneymapClient] initialize ENTER
+[16:19:41] [Render thread/INFO] [?] Version: JourneyMap 1.18.1-5.8.0beta6, built with Forge 1.18.1-39.0.6
+Forge: 39.0.10
+Environment: os.name, os.arch, java.version, user.country, user.language=null, game language=en_us, locale=en_us
+Features: 
+	RadarPlayers : singleplayer = true , multiplayer = true
+	RadarAnimals : singleplayer = true , multiplayer = true
+	RadarMobs : singleplayer = true , multiplayer = true
+	RadarVillagers : singleplayer = true , multiplayer = true
+	MapTopo : singleplayer = true , multiplayer = true
+	MapSurface : singleplayer = true , multiplayer = true
+	MapCaves : singleplayer = true , multiplayer = true
+	MapBiome : singleplayer = true , multiplayer = true
+null
+null
+null
+null
+null
+null
+[16:19:41] [Render thread/INFO] [ClientAPI] [ClientAPI] built with JourneyMap API 1.8-SNAPSHOT
+[16:19:41] [Render thread/INFO] [PluginHelper] Initializing plugins with Client API: journeymap.client.api.impl.ClientAPI
+[16:19:41] [Render thread/INFO] [PluginHelper] Initialized IClientPlugin: journeymap.client.ui.fullscreen.event.FullscreenEventReceiver
+[16:19:41] [Render thread/INFO] [PluginHelper] Initialized IClientPlugin: frankv.jmi.JourneyMapPlugin
+[16:19:41] [Render thread/INFO] [JourneymapClient] initialize EXIT, elapsed count 0 avg NaNms
+[16:19:41] [Render thread/ERROR] [FileHandler] Couldn't locate icons for flat: /Users/matt/Documents/curseforge/minecraft/Instances/Test%20Pack/mods/journeymap-1.18.1-5.8.0beta6.jar/assets/journeymap/theme/flat
+[16:19:41] [Render thread/INFO] [ThemeLoader] Preloaded theme textures: 0
+[16:22:49] [Server thread/INFO] [ForgeConfig] Loading JourneyMap Forge Configs
+[16:22:59] [Thread-0/INFO] [ForgeConfig] Loading JourneyMap Forge Configs
+[16:23:55] [Render thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for biomesoplenty
+[16:23:59] [Render thread/INFO] [WaypointStore] Loaded 0 waypoints from /Users/matt/Documents/curseforge/minecraft/Instances/Test Pack/journeymap/data/sp/New World3/waypoints
+[16:23:59] [Render thread/INFO] [JourneymapClient] Mapping started in /Users/matt/Documents/curseforge/minecraft/Instances/Test Pack/journeymap/data/sp/New World3//Users/matt/Documents/curseforge/minecraft/Instances/Test Pack/journeymap/data/sp/New World3/overworld. Memory: 5120MB total, 2189MB free 
+[16:24:32] [Render thread/INFO] [ChatLog] 
+[17:05:35] [Render thread/INFO] [JourneymapClient] Mapping halted in /Users/matt/Documents/curseforge/minecraft/Instances/Test Pack/journeymap/data/mp/offline/minecraft:overworld

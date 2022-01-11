@@ -1,0 +1,13 @@
+{
+	version: 1
+	uuid: "98b32eeccc264f65b3b57573eef3939e"
+	name: "Keirtain"
+	can_edit: false
+	lock: false
+	auto_pin: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	claimed_rewards: { }
+	pinned_quests: [ ]
+}

@@ -1,0 +1,610 @@
+{
+	id: "6AEC8C93087CE9FD"
+	group: ""
+	order_index: 0
+	filename: "getting_started"
+	title: "Getting Started"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.0d
+			y: -2.5d
+			description: ["Welcome to Momentum. As an aspiring merchant in a new land, your king has tasked you with founding a bustling city for purposes of trade. That might have been easier had he also provided you with the necessary resources, but he has instead told you that the land will provide you with everything that you need. Guess its time to find out if that is true."]
+			dependency_requirement: "one_completed"
+			id: "1325C1F12CC9DC43"
+			tasks: [{
+				id: "6A545823AB71F9A0"
+				type: "checkmark"
+				title: "Welcome"
+			}]
+			rewards: [{
+				id: "5259A50B2EF9C612"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "The more things change..."
+			x: 1.0d
+			y: -2.5d
+			description: ["You find yourself in a village full of potential targets - err... trading partners - but with nothing useful to trade. Seems like you will need to work up the ladder the old fashioned way: by punching trees."]
+			dependencies: ["1325C1F12CC9DC43"]
+			id: "01D34068E5979352"
+			tasks: [{
+				id: "5E8F82EEA8A483DA"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 4L
+			}]
+			rewards: [{
+				id: "4B5C66E375FBDF27"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 4
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.5d
+			description: ["It's not exactly the sophisticed machinery that you are used to, but now that you have a few resources, this crafting bench will let you craft your first set of tools - and everything else."]
+			dependencies: ["01D34068E5979352"]
+			id: "464CE66BF82452CE"
+			tasks: [{
+				id: "522ABCA1C536865F"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+			rewards: [
+				{
+					id: "5C8F4A3B0DD3B120"
+					type: "item"
+					item: "minecraft:apple"
+					count: 8
+				}
+				{
+					id: "2975C77FBAB3A30B"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+		}
+		{
+			title: "Initial Tools"
+			x: 3.5d
+			y: -5.0d
+			description: ["With your first set of tools firmly in hand, it's time to start acquiring resources to make the world your own. Don't forget some torches!"]
+			dependencies: ["464CE66BF82452CE"]
+			id: "6B46B7D68D3BCA60"
+			tasks: [
+				{
+					id: "52D997A0175FA6AF"
+					type: "item"
+					title: "Any #forge:tools/pickaxe"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:tools/pickaxe"
+						}
+					}
+				}
+				{
+					id: "5E490DB5743FC0C8"
+					type: "item"
+					title: "Any #forge:tools/axe"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:tools/axe"
+						}
+					}
+				}
+				{
+					id: "6D9B5053FE4CE048"
+					type: "item"
+					title: "Any #forge:tools/shovel"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:tools/shovel"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "31530AEC3EE3E513"
+					type: "item"
+					item: "minecraft:torch"
+					count: 32
+				}
+				{
+					id: "0D32311CC62AC864"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+		}
+		{
+			title: "Coal"
+			x: -0.5d
+			y: -7.5d
+			description: ["Getting coal will allow you to continue making torches and to smelt all of those ores found underground."]
+			dependencies: ["6B46B7D68D3BCA60"]
+			id: "7F96AF871BCCD1C4"
+			tasks: [{
+				id: "5441EA5F2E1C4C7F"
+				type: "item"
+				title: "Any #minecraft:coals"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:coals"
+					}
+				}
+				count: 32L
+			}]
+			rewards: [{
+				id: "5DB02FCC9BFA05C6"
+				type: "item"
+				item: "minecraft:coal"
+				count: 32
+			}]
+		}
+		{
+			title: "Iron Ore"
+			x: 1.0d
+			y: -7.5d
+			dependencies: ["6B46B7D68D3BCA60"]
+			id: "03C9907FFAFE78DD"
+			tasks: [{
+				id: "07F2683E31DEEBF6"
+				type: "item"
+				item: "minecraft:raw_iron"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "17A019D08DA4F135"
+					type: "item"
+					item: "minecraft:raw_iron"
+					count: 32
+				}
+				{
+					id: "3AFADD4B0593C067"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			title: "Gold Ore"
+			x: 4.0d
+			y: -7.5d
+			dependencies: ["6B46B7D68D3BCA60"]
+			id: "0B075AE9EA5C9696"
+			tasks: [{
+				id: "3959D7E7B1B449D4"
+				type: "item"
+				item: "minecraft:raw_gold"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "328D97C37F3F5315"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "643932D36A92D0E3"
+					type: "item"
+					item: {
+						id: "treasurebags:treasure_bag"
+						Count: 1b
+						tag: {
+							silentlib.LootContainer: { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Redstone Dust"
+			x: 5.5d
+			y: -7.5d
+			dependencies: ["6B46B7D68D3BCA60"]
+			id: "2E403014339036F5"
+			tasks: [{
+				id: "79D4E1A84502FB80"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "5363B2B72B364E07"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "0FA2576BD8D04AEA"
+					type: "item"
+					item: {
+						id: "treasurebags:treasure_bag"
+						Count: 1b
+						tag: {
+							silentlib.LootContainer: { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Copper Ore"
+			x: 2.5d
+			y: -7.5d
+			dependencies: ["6B46B7D68D3BCA60"]
+			id: "64AF41F3F8C0CC77"
+			tasks: [{
+				id: "016AA0D9C5FEE732"
+				type: "item"
+				item: "minecraft:raw_copper"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "4A8E7AD4E44B271C"
+					type: "item"
+					item: "minecraft:raw_copper"
+					count: 32
+				}
+				{
+					id: "4D418B58C24E6DDE"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			title: "Diamonds"
+			x: 7.0d
+			y: -7.5d
+			dependencies: ["6B46B7D68D3BCA60"]
+			id: "15E1F50D3AD1219D"
+			tasks: [{
+				id: "0063E98702B7612F"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "38C578381A412AF9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "241D4B4D56080039"
+					type: "item"
+					item: {
+						id: "treasurebags:treasure_bag"
+						Count: 1b
+						tag: {
+							silentlib.LootContainer: { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Green Acres"
+			x: 6.0d
+			y: -2.5d
+			description: ["Once, acquiring food was as simple as walking to the local market. Maybe that will be the case again in the future, but for now, you might have to get your hands a little dirty and your thumbs a little green"]
+			dependencies: ["464CE66BF82452CE"]
+			dependency_requirement: "one_completed"
+			id: "14FB10A6D11A8583"
+			tasks: [{
+				id: "0B86C08786CA7B0C"
+				type: "item"
+				title: "Any #forge:tools/hoe"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:tools/hoe"
+					}
+				}
+			}]
+			rewards: [{
+				id: "7742A784527ECD96"
+				type: "item"
+				item: "minecraft:bone_meal"
+				count: 32
+			}]
+		}
+		{
+			x: 8.0d
+			y: -3.5d
+			dependencies: ["14FB10A6D11A8583"]
+			id: "73132A3D3B7C4F95"
+			tasks: [{
+				id: "3406EC22326B8BAA"
+				type: "item"
+				item: "minecraft:wheat"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "5F5899A76B2CC444"
+					type: "item"
+					item: "minecraft:wheat"
+					count: 32
+				}
+				{
+					id: "7A83BBCD84E26580"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -2.5d
+			dependencies: ["14FB10A6D11A8583"]
+			id: "66D97F12FAB287A0"
+			tasks: [{
+				id: "575A120077432325"
+				type: "item"
+				item: "minecraft:carrot"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "7513438E00302222"
+					type: "item"
+					item: "minecraft:carrot"
+					count: 32
+				}
+				{
+					id: "292EE57B2E94BB69"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -1.5d
+			dependencies: ["14FB10A6D11A8583"]
+			id: "233FCF91913FB6CF"
+			tasks: [{
+				id: "0788F8D9712090EB"
+				type: "item"
+				item: "minecraft:potato"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "05B29A4AF57C4B19"
+					type: "item"
+					item: "minecraft:potato"
+					count: 32
+				}
+				{
+					id: "6021563047FA4B56"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -2.5d
+			description: ["Combining your mining resources with the things coming from your garden should give you an exceptional food item for now. It isn't the most varied diet, but it's filling and vegan."]
+			dependencies: [
+				"66D97F12FAB287A0"
+				"233FCF91913FB6CF"
+				"73132A3D3B7C4F95"
+			]
+			id: "3D46D3FF3217C2C5"
+			tasks: [{
+				id: "293ACF1F6F0C5E06"
+				type: "item"
+				item: "minecraft:golden_carrot"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "555AC310A1F5592B"
+					type: "item"
+					item: {
+						id: "treasurebags:treasure_bag"
+						Count: 1b
+						tag: {
+							silentlib.LootContainer: {
+								BagType: "treasurebags:dungeon"
+							}
+						}
+					}
+				}
+				{
+					id: "23818D75B06DD0B9"
+					type: "item"
+					item: "minecraft:golden_carrot"
+					count: 16
+				}
+				{
+					id: "179F3FDE957DEB8D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Animal Husbandry"
+			x: 3.5d
+			y: 0.0d
+			description: ["Progress requires sacrifices. In this case, sacrifices from the local animal population. With some work, you might even be able to keep and breed the animals for easier access to the resources. Wool, leather, and eggs will help you progress and will make for fine trade goods - both to impress your king and perhaps with the local villagers."]
+			dependencies: ["464CE66BF82452CE"]
+			id: "01F03D1784EA0057"
+			tasks: [{
+				id: "2FA5BC6DE3F6A487"
+				type: "item"
+				title: "Any #forge:shears"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:shears"
+					}
+				}
+			}]
+			rewards: [{
+				id: "61557B751244A443"
+				type: "item"
+				item: "minecraft:oak_fence"
+				count: 64
+			}]
+		}
+		{
+			title: "8x Wool"
+			x: 2.5d
+			y: 2.0d
+			dependencies: ["01F03D1784EA0057"]
+			id: "4FDC95802D2868ED"
+			tasks: [{
+				id: "45365043172927F2"
+				type: "item"
+				title: "Any #minecraft:wool"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:wool"
+					}
+				}
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "2D60677B8BC9D48C"
+					type: "item"
+					item: "minecraft:white_wool"
+					count: 8
+				}
+				{
+					id: "1FDA2FFA29FB3574"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			dependencies: ["01F03D1784EA0057"]
+			id: "34CB9BCA5DC49EA7"
+			tasks: [{
+				id: "3565BBD516C8C2D0"
+				type: "item"
+				item: "minecraft:leather"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "3A53B9C4382C3DC6"
+					type: "item"
+					item: "minecraft:leather"
+					count: 8
+				}
+				{
+					id: "746AA33DC54693D6"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			dependencies: ["01F03D1784EA0057"]
+			id: "37BDBA34C996DB89"
+			tasks: [{
+				id: "142B05D8E24DFC49"
+				type: "item"
+				item: "minecraft:egg"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "6E1D696D6071C6D1"
+					type: "item"
+					item: "minecraft:egg"
+					count: 8
+				}
+				{
+					id: "5F17CF9ACAA3AF05"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 4.0d
+			description: ["The animal products have proven helpful. In particular, the leather has allowed you to craft a new backpack that will make traveling further from the village much more convenient."]
+			dependencies: [
+				"37BDBA34C996DB89"
+				"34CB9BCA5DC49EA7"
+				"4FDC95802D2868ED"
+			]
+			id: "69F40FFB83EED0E5"
+			tasks: [{
+				id: "2306271DEA85D2C7"
+				type: "item"
+				item: "sophisticatedbackpacks:backpack"
+			}]
+			rewards: [
+				{
+					id: "1FCA960DF55BC030"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:crafting_upgrade"
+						Count: 1b
+						ForgeCaps: {
+							"polymorph:stack_recipe_data": { }
+						}
+					}
+				}
+				{
+					id: "573F1FDD9749EFC3"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:smelting_upgrade"
+						Count: 1b
+						ForgeCaps: {
+							"polymorph:stack_recipe_data": { }
+						}
+					}
+				}
+				{
+					id: "74246B2A4B693B27"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+	]
+}

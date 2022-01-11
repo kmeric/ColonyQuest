@@ -1,0 +1,252 @@
+{
+	id: "7BBB5DD097DC9009"
+	group: ""
+	order_index: 2
+	filename: "civilization"
+	title: "Civilization"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.5d
+			y: 0.5d
+			description: ["As you have explored, you have noticed that many villages apear to be completely abandoned (some, even before you arrive). You suspect that perhaps the constant undead attacks have taken their toll. One group's failure is another's opportunity, however. You imagine that you could bring one of these abandoned villages back to life with you as the leader. "]
+			id: "1BB571557F74D3A1"
+			tasks: [{
+				id: "7BE92C777F0CDFCE"
+				type: "checkmark"
+				title: "Abandoned Villages"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			description: ["Whether you found an abandoned village or decided to start from nothing, the build tool and one or more builders will certainly be necessary."]
+			dependencies: ["1BB571557F74D3A1"]
+			id: "0D6E099A1A242153"
+			tasks: [{
+				id: "1775C68F15D3A127"
+				type: "item"
+				item: "structurize:sceptergold"
+			}]
+			rewards: [
+				{
+					id: "4AAE1329601DC4C8"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "2C0FFA33AF366627"
+					type: "item"
+					item: "minecolonies:blockhutbuilder"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 2.5d
+			description: [
+				"Building an empire is surprisingly expensive. The builders are always asking for obscure items! For some items that I don't have to time to acquire, trading with home might be possible."
+				"Review the \"Free Trade\" chapter for possible trades."
+			]
+			dependencies: ["1BB571557F74D3A1"]
+			id: "6FFAEA28E4209D50"
+			tasks: [{
+				id: "28BC1065D173507F"
+				type: "checkmark"
+				title: "Expensive!"
+			}]
+			rewards: [{
+				id: "710D59ED7481DC97"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.5d
+			description: ["In order to achieve any sort of impressive empire, we will need an educated population. The university should get them reading and researching new technologies!"]
+			dependencies: ["2B7C34AEE9649C64"]
+			id: "15B51FB56A64C303"
+			tasks: [{
+				id: "41C6DE416391669D"
+				type: "item"
+				item: "minecolonies:blockhutuniversity"
+			}]
+			rewards: [{
+				id: "1EE7F11077F66DB0"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.5d
+			description: ["Finally - somewhere to store all of my cobblestone! The warehouse offers a central storage area for everything that a growing village might need. "]
+			dependencies: ["0D6E099A1A242153"]
+			id: "2B7C34AEE9649C64"
+			tasks: [{
+				id: "75A4E34664BE7C9D"
+				type: "item"
+				item: "minecolonies:blockhutwarehouse"
+			}]
+			rewards: [{
+				id: "6143E0C59D4C6F5E"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 0.5d
+			y: -6.5d
+			description: ["It's unreasonable to expect me to deliver all of the items that the villagers might need. I have more pressing things to do - like building an empire. The courier can handle the deliveries. Since he is doing so much walking, we'll even ensure that he is the first villager (other than ourselves) to have shoes!"]
+			dependencies: ["2B7C34AEE9649C64"]
+			id: "3F652C2CDFE26808"
+			tasks: [{
+				id: "5DC6438BA07F441A"
+				type: "item"
+				item: "minecolonies:blockhutdeliveryman"
+			}]
+			rewards: [{
+				id: "456E78237B5B44A4"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.5d
+			description: ["After killing an inviding chieftain, I was able to claim his sword. It's a fiersome weapon. I doubt that showing it off will disuade other attackers though, unfortunately."]
+			dependencies: ["0D6E099A1A242153"]
+			id: "39315E48E8110610"
+			tasks: [{
+				id: "5C7547794688934F"
+				type: "item"
+				item: {
+					id: "minecolonies:chiefsword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "38B20983D2DE5B8C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "129A315BD837BFBC"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 4s
+								id: "minecraft:sharpness"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -4.5d
+			description: ["With some basic crops coming into the warehouse, we should diversify everyone's diet with a fisherman. I have also heard that the waters are full of sometimes-valuable junk that the fisher might be able to recover!"]
+			dependencies: ["02B1C5DBEDE920C2"]
+			id: "3B1D70ED57BD161D"
+			tasks: [{
+				id: "75200BCD3D56D511"
+				type: "item"
+				item: "minecolonies:blockhutfisherman"
+			}]
+			rewards: [
+				{
+					id: "6D8907B80FBDD9D4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "0DF95A3D59FED979"
+					type: "item"
+					item: {
+						id: "minecraft:fishing_rod"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -4.5d
+			description: ["Now that we have a warehouse, we should probably start filling it with things other than our spare dirt and cobblestone. We should start by finding ways to feed our new villagers at scale."]
+			dependencies: ["2B7C34AEE9649C64"]
+			id: "02B1C5DBEDE920C2"
+			tasks: [
+				{
+					id: "2A4092DAB802F5BF"
+					type: "item"
+					item: "minecolonies:blockhutfarmer"
+				}
+				{
+					id: "02E610CF28296177"
+					type: "item"
+					item: "minecolonies:blockhutfield"
+				}
+			]
+			rewards: [
+				{
+					id: "33B2A769C81CA591"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "1D39995A84D9319D"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+					count: 64
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -6.5d
+			description: ["Finally, someone around here who can do some real work other than just me. The forester will be able to cut down nearby trees (and even replant them - very sustainable!). Hopefully there are some trees around here that match the wood that the villagers keep demanding..."]
+			dependencies: ["2B7C34AEE9649C64"]
+			id: "5901648E499A5EE8"
+			tasks: [{
+				id: "198295AB00978B7B"
+				type: "item"
+				item: "minecolonies:blockhutlumberjack"
+			}]
+			rewards: [{
+				id: "0262A237EE185E94"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.5d
+			description: ["A brave soul has come forward that is willing to start a mine in the village. It sounds great, but I've been down there. It isn't safe. I wonder how many people this mine will send to their deaths..."]
+			dependencies: ["2B7C34AEE9649C64"]
+			id: "1148C1D79AE85E98"
+			tasks: [{
+				id: "494F7478795B5C28"
+				type: "item"
+				item: "minecolonies:blockhutminer"
+			}]
+			rewards: [{
+				id: "5A3E9E1A069A31DB"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+	]
+}
