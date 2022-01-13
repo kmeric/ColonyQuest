@@ -63,10 +63,10 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -4.5d
+			x: 3.0d
+			y: -3.5d
 			description: ["In order to achieve any sort of impressive empire, we will need an educated population. The university should get them reading and researching new technologies!"]
-			dependencies: ["2B7C34AEE9649C64"]
+			dependencies: ["583A7AA84FEC027F"]
 			id: "15B51FB56A64C303"
 			tasks: [{
 				id: "41C6DE416391669D"
@@ -81,9 +81,9 @@
 		}
 		{
 			x: 0.5d
-			y: -4.5d
+			y: -5.5d
 			description: ["Finally - somewhere to store all of my cobblestone! The warehouse offers a central storage area for everything that a growing village might need. "]
-			dependencies: ["0D6E099A1A242153"]
+			dependencies: ["583A7AA84FEC027F"]
 			id: "2B7C34AEE9649C64"
 			tasks: [{
 				id: "75A4E34664BE7C9D"
@@ -98,7 +98,7 @@
 		}
 		{
 			x: 0.5d
-			y: -6.5d
+			y: -7.5d
 			description: ["It's unreasonable to expect me to deliver all of the items that the villagers might need. I have more pressing things to do - like building an empire. The courier can handle the deliveries. Since he is doing so much walking, we'll even ensure that he is the first villager (other than ourselves) to have shoes!"]
 			dependencies: ["2B7C34AEE9649C64"]
 			id: "3F652C2CDFE26808"
@@ -114,8 +114,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 0.5d
+			x: -2.5d
+			y: -2.5d
 			description: ["After killing an inviding chieftain, I was able to claim his sword. It's a fiersome weapon. I doubt that showing it off will disuade other attackers though, unfortunately."]
 			dependencies: ["0D6E099A1A242153"]
 			id: "39315E48E8110610"
@@ -153,10 +153,10 @@
 			]
 		}
 		{
-			x: 5.5d
-			y: -4.5d
+			x: -2.5d
+			y: -5.5d
 			description: ["With some basic crops coming into the warehouse, we should diversify everyone's diet with a fisherman. I have also heard that the waters are full of sometimes-valuable junk that the fisher might be able to recover!"]
-			dependencies: ["02B1C5DBEDE920C2"]
+			dependencies: ["583A7AA84FEC027F"]
 			id: "3B1D70ED57BD161D"
 			tasks: [{
 				id: "75200BCD3D56D511"
@@ -183,10 +183,10 @@
 			]
 		}
 		{
-			x: 3.0d
-			y: -4.5d
+			x: -2.5d
+			y: -6.5d
 			description: ["Now that we have a warehouse, we should probably start filling it with things other than our spare dirt and cobblestone. We should start by finding ways to feed our new villagers at scale."]
-			dependencies: ["2B7C34AEE9649C64"]
+			dependencies: ["583A7AA84FEC027F"]
 			id: "02B1C5DBEDE920C2"
 			tasks: [
 				{
@@ -215,10 +215,10 @@
 			]
 		}
 		{
-			x: 3.0d
-			y: -6.5d
+			x: -2.5d
+			y: -4.5d
 			description: ["Finally, someone around here who can do some real work other than just me. The forester will be able to cut down nearby trees (and even replant them - very sustainable!). Hopefully there are some trees around here that match the wood that the villagers keep demanding..."]
-			dependencies: ["2B7C34AEE9649C64"]
+			dependencies: ["583A7AA84FEC027F"]
 			id: "5901648E499A5EE8"
 			tasks: [{
 				id: "198295AB00978B7B"
@@ -232,10 +232,10 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -2.5d
+			x: -2.5d
+			y: -3.5d
 			description: ["A brave soul has come forward that is willing to start a mine in the village. It sounds great, but I've been down there. It isn't safe. I wonder how many people this mine will send to their deaths..."]
-			dependencies: ["2B7C34AEE9649C64"]
+			dependencies: ["583A7AA84FEC027F"]
 			id: "1148C1D79AE85E98"
 			tasks: [{
 				id: "494F7478795B5C28"
@@ -250,7 +250,7 @@
 		}
 		{
 			x: -2.5d
-			y: -3.0d
+			y: -1.5d
 			description: ["Nobody mentioned that citizens were so terrible at caring for themselves. Hopefully this is a short term problem!"]
 			dependencies: ["0D6E099A1A242153"]
 			id: "75599A9909C7A8C8"
@@ -275,8 +275,8 @@
 			]
 		}
 		{
-			x: -2.5d
-			y: -1.5d
+			x: 0.5d
+			y: -3.5d
 			description: ["Well, at least one person around here is doing something other than me. Even if I do have to provide pretty much everything that he uses..."]
 			dependencies: ["0D6E099A1A242153"]
 			id: "583A7AA84FEC027F"
@@ -307,7 +307,7 @@
 		}
 		{
 			x: -2.5d
-			y: 0.0d
+			y: -0.5d
 			description: ["\"Never craft again\" is a funny way of saying \"there is one thing that you might have to craft slightly fewer of.\" In any case, by teaching the Builder how to build torches, at least I can free up a few moments to care for myself."]
 			dependencies: ["0D6E099A1A242153"]
 			id: "342A1EF584823D2C"
@@ -334,6 +334,169 @@
 					type: "item"
 					item: "minecraft:stick"
 					count: 32
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 0.5d
+			description: ["Maybe I'm not the best leader, but I had reasons! At a minimum, I think that I still have some apples around here somewhere..."]
+			dependencies: ["0D6E099A1A242153"]
+			id: "65D23E7683812E26"
+			tasks: [{
+				id: "56AEC7E832A19F2C"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/citizen_eat_food_rotten_flesh"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "75106226A0732DAC"
+				type: "item"
+				item: "minecraft:apple"
+				count: 32
+			}]
+		}
+		{
+			x: -5.0d
+			y: -4.5d
+			description: ["I have officially made it to phase two. I started by punching wood and now someone else is punching wood for me. Was I really punching wood for someone else, too? Is everything just a simulation? Is it tree punching all of the way down? Sigh..."]
+			dependencies: ["5901648E499A5EE8"]
+			id: "23012F6C4C522CEB"
+			tasks: [
+				{
+					id: "4B59516A205F5B3C"
+					type: "advancement"
+					advancement: "minecolonies:production/build_lumberjack"
+					criterion: ""
+				}
+				{
+					id: "7BB9579B99A59325"
+					type: "item"
+					item: "minecraft:oak_log"
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "15EECD6D40BE289B"
+					type: "item"
+					item: "minecraft:spruce_sapling"
+					count: 4
+				}
+				{
+					id: "1A6DF2A712435C5D"
+					type: "item"
+					item: "minecraft:birch_sapling"
+					count: 4
+				}
+				{
+					id: "4F8193EEBC5DAF86"
+					type: "item"
+					item: "minecraft:dark_oak_sapling"
+					count: 4
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: -3.5d
+			description: ["Let me get this straight: I need to provide cobblestone to some guy so that he can bring me back a slightly larger amount of cobblestone? That seems inconvenient, but I'll play for now..."]
+			dependencies: ["1148C1D79AE85E98"]
+			id: "6BB0C51EE8CA5966"
+			tasks: [{
+				id: "653FEFE52C7922EB"
+				type: "advancement"
+				advancement: "minecolonies:production/build_miner"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "5B274A63D5231947"
+					type: "item"
+					item: "minecraft:cobblestone"
+					count: 64
+				}
+				{
+					id: "4877FBA6EC7A9D9C"
+					type: "item"
+					item: "minecraft:ladder"
+					count: 16
+				}
+				{
+					id: "26D36528752046BE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: -5.5d
+			description: ["I'm starting to get the hang of this. I even managed to make sure that the water level of my fisherman doesn't defy gravity. Right? ...Right?"]
+			dependencies: ["3B1D70ED57BD161D"]
+			id: "0B009391E3F76D6E"
+			tasks: [
+				{
+					id: "5AD9F4B7AD855B62"
+					type: "advancement"
+					advancement: "minecolonies:production/build_fisherman"
+					criterion: ""
+				}
+				{
+					id: "299DDC23265C6B92"
+					type: "item"
+					item: "minecraft:cod"
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "41290EC24CAFB21A"
+					type: "item"
+					item: {
+						id: "minecraft:fishing_rod"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2A65572EBCC33FC3"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: -6.5d
+			description: ["I can finally top playing in the dirt (as much) and hand off my farming duties to someone else. I should probably have the farmer start with carrots since they don't need to be cooked, too..."]
+			dependencies: ["02B1C5DBEDE920C2"]
+			id: "57C889EC980D33D9"
+			tasks: [{
+				id: "27273974BDD31F90"
+				type: "advancement"
+				advancement: "minecolonies:production/build_farmer"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "2EC62DDE60A5271C"
+					type: "item"
+					item: {
+						id: "minecraft:stone_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "32DA997CA1B1452D"
+					type: "item"
+					item: "minecraft:carrot"
+					count: 16
 				}
 			]
 		}

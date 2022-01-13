@@ -12,3 +12,4 @@
 	mapcolonyborders = true
 	#Whether to display citizen deathpoints in JourneyMap [Default: true]
 	mapdeathpoints = true
+

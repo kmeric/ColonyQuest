@@ -54,7 +54,7 @@
 		{
 			x: 3.5d
 			y: -2.5d
-			description: ["It's not exactly the sophisticed machinery that you are used to, but now that you have a few resources, this crafting bench will let you craft your first set of tools - and everything else."]
+			description: ["It's not exactly the sophisticed machinery that I am used to, but now that I have a few resources, this crafting bench will let you craft your first set of tools - and everything else."]
 			dependencies: ["01D34068E5979352"]
 			id: "464CE66BF82452CE"
 			tasks: [{
@@ -80,7 +80,7 @@
 			title: "Initial Tools"
 			x: 3.5d
 			y: -5.0d
-			description: ["With your first set of tools firmly in hand, it's time to start acquiring resources to make the world your own. Don't forget some torches!"]
+			description: ["With my first set of tools firmly in hand, it's time to start acquiring resources to make the world my own. I hope I don't forget to bring some torches!"]
 			dependencies: ["464CE66BF82452CE"]
 			id: "6B46B7D68D3BCA60"
 			tasks: [
@@ -154,13 +154,26 @@
 					}
 				}
 				count: 32L
+				consume_items: false
 			}]
-			rewards: [{
-				id: "5DB02FCC9BFA05C6"
-				type: "item"
-				item: "minecraft:coal"
-				count: 32
-			}]
+			rewards: [
+				{
+					id: "11C6434199D05417"
+					type: "item"
+					item: {
+						id: "treasurebags:treasure_bag"
+						Count: 1b
+						tag: {
+							silentlib.LootContainer: { }
+						}
+					}
+				}
+				{
+					id: "7177727837C87FE1"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
 		}
 		{
 			title: "Iron Ore"
@@ -173,18 +186,24 @@
 				type: "item"
 				item: "minecraft:raw_iron"
 				count: 32L
+				consume_items: false
 			}]
 			rewards: [
-				{
-					id: "17A019D08DA4F135"
-					type: "item"
-					item: "minecraft:raw_iron"
-					count: 32
-				}
 				{
 					id: "3AFADD4B0593C067"
 					type: "xp_levels"
 					xp_levels: 2
+				}
+				{
+					id: "351001DA515EA1AE"
+					type: "item"
+					item: {
+						id: "treasurebags:treasure_bag"
+						Count: 1b
+						tag: {
+							silentlib.LootContainer: { }
+						}
+					}
 				}
 			]
 		}
@@ -199,6 +218,7 @@
 				type: "item"
 				item: "minecraft:raw_gold"
 				count: 32L
+				consume_items: false
 			}]
 			rewards: [
 				{
@@ -230,6 +250,7 @@
 				type: "item"
 				item: "minecraft:redstone"
 				count: 32L
+				consume_items: false
 			}]
 			rewards: [
 				{
@@ -261,18 +282,24 @@
 				type: "item"
 				item: "minecraft:raw_copper"
 				count: 32L
+				consume_items: false
 			}]
 			rewards: [
-				{
-					id: "4A8E7AD4E44B271C"
-					type: "item"
-					item: "minecraft:raw_copper"
-					count: 32
-				}
 				{
 					id: "4D418B58C24E6DDE"
 					type: "xp_levels"
 					xp_levels: 2
+				}
+				{
+					id: "4B0D9C2155B51A01"
+					type: "item"
+					item: {
+						id: "treasurebags:treasure_bag"
+						Count: 1b
+						tag: {
+							silentlib.LootContainer: { }
+						}
+					}
 				}
 			]
 		}
@@ -287,6 +314,7 @@
 				type: "item"
 				item: "minecraft:diamond"
 				count: 4L
+				consume_items: false
 			}]
 			rewards: [
 				{
@@ -311,7 +339,7 @@
 			title: "Green Acres"
 			x: 6.0d
 			y: -2.5d
-			description: ["Once, acquiring food was as simple as walking to the local market. Maybe that will be the case again in the future, but for now, you might have to get your hands a little dirty and your thumbs a little green"]
+			description: ["Once, acquiring food was as simple as walking to the local market. Maybe that will be the case again in the future, but for now, I might have to get my hands a little dirty and my thumbs a little green"]
 			dependencies: ["464CE66BF82452CE"]
 			dependency_requirement: "one_completed"
 			id: "14FB10A6D11A8583"
@@ -412,7 +440,7 @@
 		{
 			x: 10.0d
 			y: -2.5d
-			description: ["Combining your mining resources with the things coming from your garden should give you an exceptional food item for now. It isn't the most varied diet, but it's filling and vegan."]
+			description: ["Combining some of my excess mining resources with the things coming from my garden should give me an exceptional food item for now. It isn't the most varied diet, but it's filling and vegan."]
 			dependencies: [
 				"66D97F12FAB287A0"
 				"233FCF91913FB6CF"
