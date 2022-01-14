@@ -64,8 +64,8 @@
 		}
 		{
 			x: 3.0d
-			y: -3.5d
-			description: ["In order to achieve any sort of impressive empire, we will need an educated population. The university should get them reading and researching new technologies!"]
+			y: -5.5d
+			description: ["It feels like we have a nice little village here now. \"Village.\" We're looking to build something a little more impressive than a village though, so we might need to teach these villagers what is possible. The creation of a university will allow them to learn some new tricks."]
 			dependencies: ["583A7AA84FEC027F"]
 			id: "15B51FB56A64C303"
 			tasks: [{
@@ -73,15 +73,10 @@
 				type: "item"
 				item: "minecolonies:blockhutuniversity"
 			}]
-			rewards: [{
-				id: "1EE7F11077F66DB0"
-				type: "xp_levels"
-				xp_levels: 3
-			}]
 		}
 		{
-			x: 0.5d
-			y: -5.5d
+			x: -2.5d
+			y: -7.5d
 			description: ["Finally - somewhere to store all of my cobblestone! The warehouse offers a central storage area for everything that a growing village might need. "]
 			dependencies: ["583A7AA84FEC027F"]
 			id: "2B7C34AEE9649C64"
@@ -90,15 +85,10 @@
 				type: "item"
 				item: "minecolonies:blockhutwarehouse"
 			}]
-			rewards: [{
-				id: "6143E0C59D4C6F5E"
-				type: "xp_levels"
-				xp_levels: 3
-			}]
 		}
 		{
-			x: 0.5d
-			y: -7.5d
+			x: -5.0d
+			y: -8.5d
 			description: ["It's unreasonable to expect me to deliver all of the items that the villagers might need. I have more pressing things to do - like building an empire. The courier can handle the deliveries. Since he is doing so much walking, we'll even ensure that he is the first villager (other than ourselves) to have shoes!"]
 			dependencies: ["2B7C34AEE9649C64"]
 			id: "3F652C2CDFE26808"
@@ -106,11 +96,6 @@
 				id: "5DC6438BA07F441A"
 				type: "item"
 				item: "minecolonies:blockhutdeliveryman"
-			}]
-			rewards: [{
-				id: "456E78237B5B44A4"
-				type: "xp_levels"
-				xp_levels: 3
 			}]
 		}
 		{
@@ -163,24 +148,6 @@
 				type: "item"
 				item: "minecolonies:blockhutfisherman"
 			}]
-			rewards: [
-				{
-					id: "6D8907B80FBDD9D4"
-					type: "xp_levels"
-					xp_levels: 5
-				}
-				{
-					id: "0DF95A3D59FED979"
-					type: "item"
-					item: {
-						id: "minecraft:fishing_rod"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
 		}
 		{
 			x: -2.5d
@@ -200,19 +167,6 @@
 					item: "minecolonies:blockhutfield"
 				}
 			]
-			rewards: [
-				{
-					id: "33B2A769C81CA591"
-					type: "xp_levels"
-					xp_levels: 5
-				}
-				{
-					id: "1D39995A84D9319D"
-					type: "item"
-					item: "minecraft:wheat_seeds"
-					count: 64
-				}
-			]
 		}
 		{
 			x: -2.5d
@@ -225,11 +179,6 @@
 				type: "item"
 				item: "minecolonies:blockhutlumberjack"
 			}]
-			rewards: [{
-				id: "0262A237EE185E94"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
 		}
 		{
 			x: -2.5d
@@ -241,11 +190,6 @@
 				id: "494F7478795B5C28"
 				type: "item"
 				item: "minecolonies:blockhutminer"
-			}]
-			rewards: [{
-				id: "5A3E9E1A069A31DB"
-				type: "xp_levels"
-				xp_levels: 5
 			}]
 		}
 		{
@@ -276,7 +220,7 @@
 		}
 		{
 			x: 0.5d
-			y: -3.5d
+			y: -5.5d
 			description: ["Well, at least one person around here is doing something other than me. Even if I do have to provide pretty much everything that he uses..."]
 			dependencies: ["0D6E099A1A242153"]
 			id: "583A7AA84FEC027F"
@@ -395,6 +339,11 @@
 					item: "minecraft:dark_oak_sapling"
 					count: 4
 				}
+				{
+					id: "304B85F74B8CD274"
+					type: "xp_levels"
+					xp_levels: 5
+				}
 			]
 		}
 		{
@@ -497,6 +446,185 @@
 					type: "item"
 					item: "minecraft:carrot"
 					count: 16
+				}
+				{
+					id: "0708DD6396D0281E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: -7.5d
+			description: ["The warehouse is completed. It might not seem like much, but you can't have much of a trade empire without a place to store things. "]
+			dependencies: ["2B7C34AEE9649C64"]
+			id: "67E8B8DCFC93F832"
+			tasks: [{
+				id: "7854E168E9B85C0A"
+				type: "advancement"
+				advancement: "minecolonies:production/build_warehouse"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "7C9192244B100208"
+					type: "item"
+					item: "minecolonies:blockminecoloniesrack"
+					count: 6
+				}
+				{
+					id: "6FDB054D697C4EA9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "3357ED5EB15A8E1F"
+					type: "item"
+					item: {
+						id: "minecraft:leather_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: -8.5d
+			dependencies: ["3F652C2CDFE26808"]
+			id: "490628CE108A833A"
+			tasks: [{
+				id: "583088FA8B5FB372"
+				type: "advancement"
+				advancement: "minecolonies:production/build_delivery_person"
+				criterion: ""
+			}]
+		}
+		{
+			x: 0.5d
+			y: -7.5d
+			description: [
+				"There are so many requests from so many different villagers that I need somewhere to organize them all. This feels... counter to my original plans. I'm tempted to throw it in the trash and walk away, but I feel a little too invested."
+				"If I have to make one more stack of stairs though..."
+			]
+			dependencies: ["583A7AA84FEC027F"]
+			id: "71FCF06A98CC66D7"
+			tasks: [{
+				id: "6FF8ACDFE7CCF238"
+				type: "item"
+				item: "minecolonies:clipboard"
+			}]
+			rewards: [
+				{
+					id: "69486CC87A07648D"
+					type: "item"
+					item: "trashcans:item_trash_can"
+				}
+				{
+					id: "177501B32770F7EB"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -3.5d
+			description: ["Now here is something that should finally make my life better. Not only can this guard protect the village, he can even keep me safe. He is a little fragile though... perhaps I should give him a bow so that he can keep his distance from the enemies until he is a little stronger."]
+			dependencies: ["583A7AA84FEC027F"]
+			id: "4046AD0C61F8876B"
+			tasks: [{
+				id: "3EACE69C31D5A443"
+				type: "item"
+				item: "minecolonies:blockhutguardtower"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "6019B0474F71FCD0"
+					type: "item"
+					item: {
+						id: "minecraft:leather_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "69AB0007A7BFC032"
+					type: "item"
+					item: {
+						id: "minecraft:leather_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4DB2B9E6210F6F00"
+					type: "item"
+					item: {
+						id: "minecraft:leather_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "49EF553B79B98F1D"
+					type: "item"
+					item: {
+						id: "minecraft:bow"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "00EAE4DCB6E4E9A9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			description: [
+				"A good offense is a good defense. A better defense is preventing your enemies from ever being born."
+				"These torches will completely prevent enemies from spawning in the center of town. This should really help keep the villagers (and the guards) alive. It might be useful in the mine, too, to keep the miner safe even down there."
+			]
+			dependencies: ["4046AD0C61F8876B"]
+			id: "1AD6ED4EE5FF3A8C"
+			tasks: [{
+				id: "056A707327D5F2DA"
+				type: "item"
+				item: "magical_torches:medium_torch"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "61D96EE8CB73271B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "0F32411906BF476B"
+					type: "item"
+					item: {
+						id: "treasurebags:treasure_bag"
+						Count: 1b
+						tag: {
+							silentlib.LootContainer: { }
+						}
+					}
 				}
 			]
 		}

@@ -29,6 +29,7 @@
 			tasks: [{
 				id: "169C1DBA6D058F07"
 				type: "item"
+				disable_toast: true
 				item: "minecraft:copper_ingot"
 				count: 64L
 				consume_items: true
@@ -56,6 +57,7 @@
 			tasks: [{
 				id: "729115F5608442BA"
 				type: "item"
+				disable_toast: true
 				item: "minecraft:copper_block"
 				count: 32L
 				consume_items: true
@@ -83,6 +85,7 @@
 			tasks: [{
 				id: "03B77E8D6B0F1C1A"
 				type: "item"
+				disable_toast: true
 				item: "minecraft:carrot"
 				count: 64L
 				consume_items: true
@@ -97,6 +100,40 @@
 					id: "227FE7E3DAE2721F"
 					type: "command"
 					command: "/ftbquests change_progress @a reset 6056F460728334DE"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			description: ["Since Andesite is rare in our homeland, I should be able to trade it for some other types of stone. It's not really a great way to get rich, but it might be enough for when our builders need something that is otherwise out of stock."]
+			id: "5D616035D7B28B72"
+			tasks: [{
+				id: "373026A9F8B48993"
+				type: "item"
+				disable_toast: true
+				item: "minecraft:andesite"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "47752A961FFEB243"
+					type: "item"
+					item: "minecraft:granite"
+					count: 8
+				}
+				{
+					id: "390BA5A6217C2900"
+					type: "item"
+					item: "minecraft:diorite"
+					count: 8
+				}
+				{
+					id: "375091A7FA19D365"
+					type: "command"
+					command: "/ftbquests change_progress @a reset 5D616035D7B28B72"
 					player_command: false
 				}
 			]

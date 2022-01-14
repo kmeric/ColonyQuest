@@ -65,6 +65,6 @@
 	#Allowed Values: NEVER, GRAVE_RECOVERY, DEATH_RESPAWN, ALWAYS
 	auto_equip_rule = "ALWAYS"
 	#Defines the type of marker when holding in hand some items like the Grave's Key [SPARK/BOX|default:SPARK]
-	#Allowed Values: SPARK, BOX
+	#Allowed Values: SPARK, NOTE, BOX
 	marker_type = "SPARK"
 
