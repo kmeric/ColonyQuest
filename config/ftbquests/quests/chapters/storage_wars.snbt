@@ -1,0 +1,250 @@
+{
+	id: "37A12C0D4C49A927"
+	group: ""
+	order_index: 2
+	filename: "storage_wars"
+	title: "Storage Wars"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["I have acquired a lot of items. Also like... a whole lot of a lot of items. I need somewhere secure to store all of this stuff."]
+			id: "3FC8EA472B733765"
+			tasks: [{
+				id: "38D0C75B29AA539C"
+				type: "checkmark"
+				title: "Unorganized, but at scale"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			description: [
+				"Drawers are a great visual way to store items that we have a lot of. A wall of drawers isn't exactly space efficient, but it is simple. I would go so far as to say that it sparks joy. "
+				"Locking drawers will prevent them from being filled with other junk when empty. "
+			]
+			dependencies: ["3FC8EA472B733765"]
+			id: "5474A8C7DD4D9158"
+			tasks: [
+				{
+					id: "184E8E4F238454A5"
+					type: "item"
+					item: "storagedrawers:oak_full_drawers_4"
+				}
+				{
+					id: "7DA619EB591E414B"
+					type: "item"
+					item: "storagedrawers:controller"
+				}
+			]
+			rewards: [
+				{
+					id: "397E26DEC94B92B9"
+					type: "item"
+					item: "storagedrawers:drawer_key"
+				}
+				{
+					id: "6FAF997734E41B1A"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: ["Ender chests allow for storage that is accessible from anywhere. Sometimes \"anywhere\" isn't quite specific enough though. By building a new kind of ender chest, we can create networks of ender chests that can only access the storage in their network. We can even share the network with other people (or automation systems)!"]
+			dependencies: ["3FC8EA472B733765"]
+			id: "166908850A3CB9E1"
+			tasks: [{
+				id: "2359AE9CFDD7B478"
+				type: "item"
+				item: {
+					id: "enderchests:ender_chest"
+					Count: 1b
+					tag: {
+						owner: "all"
+						code: "000"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "48C798447BBE37CA"
+					type: "item"
+					item: {
+						id: "enderchests:ender_pouch"
+						Count: 1b
+						tag: {
+							open: 0b
+						}
+					}
+				}
+				{
+					id: "78D7E7776B21119F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -3.0d
+			description: [
+				"Even more things! No matter what I do, I still find more items to store."
+				"These drawers appear to be upgradeable, however! Progressively upgrading important drawers should allow this system to scale for a long while still."
+			]
+			dependencies: ["5474A8C7DD4D9158"]
+			id: "6A63D09F79696B9C"
+			tasks: [{
+				id: "7998A362B93C2230"
+				type: "item"
+				item: "storagedrawers:obsidian_storage_upgrade"
+			}]
+			rewards: [{
+				id: "069AA9B4CB1E27CB"
+				type: "item"
+				item: "storagedrawers:oak_full_drawers_1"
+				count: 4
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			dependencies: ["6A63D09F79696B9C"]
+			id: "2D6CF85F60E671F8"
+			tasks: [{
+				id: "23F4FE7DC4AB6EFD"
+				type: "item"
+				item: "storagedrawers:iron_storage_upgrade"
+			}]
+			rewards: [{
+				id: "016B24BA3BF5A437"
+				type: "item"
+				item: "storagedrawers:oak_full_drawers_2"
+				count: 6
+			}]
+		}
+		{
+			x: -3.5d
+			y: -4.0d
+			dependencies: ["2D6CF85F60E671F8"]
+			id: "37EB49A93613CFC3"
+			tasks: [{
+				id: "09C1365BBB34EA9A"
+				type: "item"
+				item: "storagedrawers:gold_storage_upgrade"
+			}]
+			rewards: [{
+				id: "4C82A23062882049"
+				type: "item"
+				item: "storagedrawers:oak_full_drawers_4"
+				count: 6
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.5d
+			dependencies: ["37EB49A93613CFC3"]
+			id: "757CE6BE38ED83F4"
+			tasks: [{
+				id: "654FD98F47AE645F"
+				type: "item"
+				item: "storagedrawers:diamond_storage_upgrade"
+			}]
+			rewards: [{
+				id: "4F5257393BED079B"
+				type: "item"
+				item: "storagedrawers:obsidian_storage_upgrade"
+				count: 6
+			}]
+		}
+		{
+			x: -3.5d
+			y: -5.5d
+			dependencies: ["757CE6BE38ED83F4"]
+			id: "20D73B7790D352EA"
+			tasks: [{
+				id: "19D883DAE1AF5940"
+				type: "item"
+				item: "storagedrawers:emerald_storage_upgrade"
+			}]
+			rewards: [
+				{
+					id: "63BAB3131F79472C"
+					type: "item"
+					item: "storagedrawers:gold_storage_upgrade"
+					count: 6
+				}
+				{
+					id: "36E1E347D19520AC"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: [
+				"As my storage system becomes more complex, I will need to be able to move items from other inventories or machines into my main storage system."
+				"Sounds like a job for pipes!"
+			]
+			dependencies: ["3FC8EA472B733765"]
+			id: "6FAFEB69486009AB"
+			tasks: [{
+				id: "424092081179CD95"
+				type: "item"
+				item: "refinedpipes:basic_item_pipe"
+				count: 18L
+			}]
+			rewards: [
+				{
+					id: "169FD1A7C7BE8865"
+					type: "item"
+					item: "refinedpipes:basic_fluid_pipe"
+					count: 8
+				}
+				{
+					id: "0D50401CF8628D71"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			description: [
+				"This item, when added to the portion of a pipe facing an inventory, will allow items to be pulled from the inventory and into the pipe network - or into other chests connected to the network."
+				"This also works for modified ender chests. If those ender chests are connected to an ender pouch in my inventory, I could use this to make sure that my personal inventory is never too full to pick up new items!"
+				"Lastly, the pipe network can be connected to your storage drawer controller to add items directly to your item drawers."
+			]
+			dependencies: [
+				"6FAFEB69486009AB"
+				"5474A8C7DD4D9158"
+			]
+			id: "4BC5032CEB09466E"
+			tasks: [{
+				id: "4A09FAF2D92F48EF"
+				type: "item"
+				item: "refinedpipes:basic_extractor_attachment"
+			}]
+			rewards: [
+				{
+					id: "296FBA7866E1AF02"
+					type: "item"
+					item: "refinedpipes:basic_item_pipe"
+					count: 6
+				}
+				{
+					id: "1A1304324F9C2804"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+		}
+	]
+}

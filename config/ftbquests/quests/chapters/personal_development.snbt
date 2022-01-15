@@ -10,30 +10,13 @@
 		{
 			x: 1.0d
 			y: 1.5d
-			description: ["Building an empire can't be limited just to establishing trade. I also have to make sure that I'm at the top of my game. I don't think that I have read a single book since getting here. I should probably work on that. "]
+			description: ["Building an empire can't be limited just to establishing trade. I also have to make sure that I'm at the top of my game. I should make sure that I have some items to make my life easier. "]
 			id: "66630F6963D0E6B1"
 			tasks: [{
 				id: "3D8BF0EF6B0C6DA3"
 				type: "checkmark"
 				title: "Self-help"
 			}]
-			rewards: [
-				{
-					id: "5C4B815B4C240366"
-					type: "xp_levels"
-					xp_levels: 1
-				}
-				{
-					id: "3AF55A6BF11D4D8E"
-					type: "item"
-					item: "minecraft:bookshelf"
-				}
-				{
-					id: "5F8D4C6439FB0E82"
-					type: "item"
-					item: "minecraft:book"
-				}
-			]
 		}
 		{
 			x: 1.0d
@@ -63,7 +46,7 @@
 		}
 		{
 			x: 1.0d
-			y: -6.0d
+			y: -4.5d
 			description: ["They say that knowledge is power. In the case of enchanting, maybe that's more true than expected. By surrounding the enchanting table with our bookshelves, we can give ourselves a real edge."]
 			dependencies: ["688659E05554D42E"]
 			id: "4D529020ED9A91DA"
@@ -80,7 +63,7 @@
 		}
 		{
 			x: 1.0d
-			y: 4.0d
+			y: 0.0d
 			description: ["While our initial farm provided some necesities, there are plenty of things still missing. Sugarcane will allow us to produce paper and, ultimately, books."]
 			dependencies: ["66630F6963D0E6B1"]
 			id: "317B147BBB7A3B0A"
@@ -98,7 +81,7 @@
 		}
 		{
 			title: "An Enchanting Discovery"
-			x: -1.5d
+			x: 2.5d
 			y: -4.5d
 			description: ["Magic is way easier than the folks back home ever let on! Applying these enchantments to our equipment will surely be a boon."]
 			dependencies: [
@@ -125,7 +108,7 @@
 			}]
 		}
 		{
-			x: -4.0d
+			x: 4.0d
 			y: -4.5d
 			description: ["While directly enchanting my gear is a good start, I can also enchant simple books, allowing myself to stockpile, collect, or even trade useful enchantments. Of course, applying them to my gear will require the use of an anvil."]
 			dependencies: ["697C636C10108E8E"]
@@ -151,13 +134,13 @@
 		}
 		{
 			title: "The Nether"
-			x: 3.5d
+			x: 5.0d
 			y: 1.5d
 			description: [
 				"Sometimes, personal development comes at the cost of personal danger."
 				"While I'm not keen on personal danger, I have heard that the nether contains a number of rare resources that might become necessary."
 			]
-			dependencies: ["66630F6963D0E6B1"]
+			dependencies: ["32CD815FF3A0D428"]
 			id: "1CD09CDE8C8ED858"
 			tasks: [
 				{
@@ -180,8 +163,8 @@
 		}
 		{
 			title: "Tools of the Trade"
-			x: -1.0d
-			y: 0.0d
+			x: 3.0d
+			y: 1.5d
 			description: ["While the starting tools were adequate, it's perhaps time to put them on a shelf and upgrade to something a little more professional."]
 			dependencies: ["66630F6963D0E6B1"]
 			id: "32CD815FF3A0D428"
@@ -240,8 +223,8 @@
 			]
 		}
 		{
-			x: 6.0d
-			y: 3.0d
+			x: 7.0d
+			y: 2.5d
 			description: ["While my morning coffee is enough to get me through most days, the dangers of the nether and whatever might come next calls for something a little more... robust."]
 			dependencies: ["1CD09CDE8C8ED858"]
 			id: "6F138C223F4A4AA4"
@@ -258,9 +241,9 @@
 		}
 		{
 			x: 1.0d
-			y: -1.0d
+			y: -1.5d
 			description: ["For now, the only thing that I can do with these books is record my own journey and thoughts, but perhaps I can eventually find a use for them."]
-			dependencies: ["66630F6963D0E6B1"]
+			dependencies: ["317B147BBB7A3B0A"]
 			id: "1BD563DC989AE64E"
 			tasks: [{
 				id: "291256BFFF26BB86"
@@ -289,7 +272,7 @@
 			]
 		}
 		{
-			x: 6.0d
+			x: 7.0d
 			y: 1.5d
 			description: ["Apparently even diamond can be improved upon. These new resources from the nether should let me improve my tools even more than I imagined."]
 			dependencies: ["1CD09CDE8C8ED858"]
@@ -315,8 +298,8 @@
 			]
 		}
 		{
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: 0.5d
 			subtitle: "This fire monster is terrible, but it does drop an item that seems to be concentrated fire and hatred. Perhaps it will be useful for something."
 			dependencies: ["1CD09CDE8C8ED858"]
 			id: "2F476CF8407E2D9A"
@@ -348,6 +331,177 @@
 							silentlib.LootContainer: { }
 						}
 					}
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: [
+				"Some of the local mystics have shown me how to create a tome to record my experiences in a way that preserves them after death. I don't understand the metaphysics of this, but the nether sounds dangerous enough that this might prove beneficial."
+				"I should make one of these and store my experience before heading to the nether."
+			]
+			dependencies: ["32CD815FF3A0D428"]
+			id: "0F1197CDDBC35A9F"
+			tasks: [{
+				id: "290E07E7984B9B52"
+				type: "item"
+				item: {
+					id: "xpbook:xp_tome"
+					Count: 1b
+					tag: { }
+				}
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "683FCCED99D69CC7"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+				}
+				{
+					id: "5FEDB2AD865E5F09"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -0.5d
+			description: [
+				"Our alchemists have discovered that combining certain items can increase one's life essence. Unfortunately, some of these items are quite rare or dangerous to acquire."
+				"The bone of a wither skeleton was on the list. If I happen to find one of these while in the nether, I should hold on to it."
+			]
+			dependencies: ["1CD09CDE8C8ED858"]
+			id: "61506F9100E03F66"
+			tasks: [{
+				id: "3DAEAD27E8CBBDF8"
+				type: "item"
+				item: "bhc:wither_bone"
+			}]
+			rewards: [
+				{
+					id: "7540F175980906F1"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "59FF24B509B1315A"
+					type: "item"
+					item: "bhc:wither_bone"
+				}
+				{
+					id: "490E971616C19D35"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -2.0d
+			description: ["With all of the items collected that were requested by the alchemists, I should be able to prepare the item that will increase my life essence. They tell me that this process is somewhat repeatable."]
+			dependencies: ["61506F9100E03F66"]
+			id: "2C586395D66DC95E"
+			tasks: [{
+				id: "3E684A0D66CEEF90"
+				type: "item"
+				item: "bhc:red_heart_canister"
+			}]
+			rewards: [
+				{
+					id: "04CCBE714567191D"
+					type: "item"
+					item: "bhc:red_heart"
+				}
+				{
+					id: "7F5637F827482349"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -3.5d
+			description: ["Not only did the item work, the alchemists were correct that the process was repeatable. This item should give me a way to organize all of these canisters and use them all at the same time."]
+			dependencies: ["2C586395D66DC95E"]
+			id: "359DAA0F2EDBF6A1"
+			tasks: [{
+				id: "1B2D97571F701C51"
+				type: "item"
+				item: "bhc:heart_amulet"
+			}]
+			rewards: [{
+				id: "7ABDDC2CE8F1EF90"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			description: [
+				"People overlook the value of leisure and a good night's sleep when it comes to personal development."
+				"A sleeping bag will ensure that I have somewhere to sleep even while travelling. The hammock will instead give me a way to pass the day and relax in style. It's like time travel - just only in one direction!"
+			]
+			dependencies: ["66630F6963D0E6B1"]
+			id: "0571C7C93A8B7BAD"
+			tasks: [
+				{
+					id: "264CC4D8C6B29883"
+					type: "item"
+					item: "comforts:sleeping_bag_white"
+				}
+				{
+					id: "00559EDD2138C819"
+					type: "item"
+					item: "comforts:hammock_white"
+				}
+			]
+			rewards: [{
+				id: "1282CC2F53D6C2EA"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			description: [
+				"This tank upgrade will allow me t otrade some backpack inventory space for a fluid tank instead."
+				"Lava is always in demand, and there is no better place to find it than the nether. Perhaps I should install one of these tanks before heading there."
+			]
+			dependencies: ["32CD815FF3A0D428"]
+			id: "02013DBDD8D372B7"
+			tasks: [{
+				id: "466E7F64FD3BBA6F"
+				type: "item"
+				item: "sophisticatedbackpacks:tank_upgrade"
+			}]
+			rewards: [
+				{
+					id: "531DCBB1189F7268"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+				}
+				{
+					id: "7F3F3B289D1EDD5E"
+					type: "xp_levels"
+					xp_levels: 1
 				}
 			]
 		}

@@ -13,7 +13,7 @@ XaeroWaypoints/
 .curseclient
 knownkeys.txt
 minecraftinstance.json
-options.txt
+/options.txt
 patchouli_data.json
 realms_persistence.json
 usercache.json

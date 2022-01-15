@@ -1,7 +1,7 @@
 {
 	id: "7BBB5DD097DC9009"
 	group: ""
-	order_index: 2
+	order_index: 3
 	filename: "civilization"
 	title: "Civilization"
 	default_quest_shape: ""
@@ -63,7 +63,7 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 2.5d
 			y: -5.5d
 			description: ["It feels like we have a nice little village here now. \"Village.\" We're looking to build something a little more impressive than a village though, so we might need to teach these villagers what is possible. The creation of a university will allow them to learn some new tricks."]
 			dependencies: ["583A7AA84FEC027F"]
@@ -504,7 +504,7 @@
 			}]
 		}
 		{
-			x: 0.5d
+			x: 1.0d
 			y: -7.5d
 			description: [
 				"There are so many requests from so many different villagers that I need somewhere to organize them all. This feels... counter to my original plans. I'm tempted to throw it in the trash and walk away, but I feel a little too invested."
@@ -627,6 +627,124 @@
 					}
 				}
 			]
+		}
+		{
+			x: 4.5d
+			y: -5.5d
+			description: ["Our researchers at the university are putting in some hard work, but new discoveries will require time. In the meantime, we should work with our builders to upgrade their workshops so that we can, in turn, upgrade other buildings in the village."]
+			dependencies: ["15B51FB56A64C303"]
+			id: "48AC8545D66B71B7"
+			tasks: [{
+				id: "085B7F66AE89804A"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/build_builder_2"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "26291BA2B0B493D5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "0E63F803B9A5FB45"
+					type: "item"
+					item: "minecolonies:blockhutbuilder"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -3.5d
+			description: [
+				"Our researchers have unlocked a barracks that allows the recruiting of much larger number of guards. "
+				"While the individual guard towers offered some early security, this should offer far better support."
+			]
+			dependencies: [
+				"4046AD0C61F8876B"
+				"15B51FB56A64C303"
+			]
+			id: "28C780E2930E8CAA"
+			tasks: [
+				{
+					id: "7AFB734F741BC4F0"
+					type: "item"
+					item: "minecolonies:blockhutbarracks"
+				}
+				{
+					id: "5506EFD15CA29F5C"
+					type: "advancement"
+					advancement: "minecolonies:military/build_barracks"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "2E478E9DD33E90B9"
+					type: "item"
+					item: "minecolonies:blockhutbarrackstower"
+				}
+				{
+					id: "42E9C5FCE697AC49"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -7.5d
+			description: [
+				"Our researchers have explained how to raise the moral of villagers through nothing but the existence of an additional building. "
+				"If this makes them work faster and complain less, I'm all ears!"
+			]
+			dependencies: ["15B51FB56A64C303"]
+			id: "42AA1F5A3D5A0592"
+			tasks: [
+				{
+					id: "72E779D8C311026A"
+					type: "item"
+					item: "minecolonies:blockhutmysticalsite"
+				}
+				{
+					id: "4F3D7AF486A2E975"
+					type: "advancement"
+					advancement: "minecolonies:minecolonies/build_mysticalsite"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "64D1CEA7000A1294"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 0.0d
+			y: -7.5d
+			description: [
+				"The postbox and stash will allow me to have the courier show up to my front dor and deliver and pickup items for me."
+				"This will let me spend less time managing the village's warehouse, but it might increase the demands on the courier. Perhaps I should build a second one to keep things running smoothly."
+			]
+			dependencies: ["583A7AA84FEC027F"]
+			id: "3B40A769EDB26EA2"
+			tasks: [
+				{
+					id: "0CBB5387057BD20C"
+					type: "item"
+					item: "minecolonies:blockpostbox"
+				}
+				{
+					id: "49A9EEEC13D15772"
+					type: "item"
+					item: "minecolonies:blockstash"
+				}
+			]
+			rewards: [{
+				id: "54CCF231F5454523"
+				type: "item"
+				item: "minecolonies:blockhutdeliveryman"
+			}]
 		}
 	]
 }
